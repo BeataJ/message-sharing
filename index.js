@@ -1,3 +1,7 @@
+const { hash } = window.location;
+
+console.log(atob(hash.replace('#', '')));
+
 document.querySelector('form').addEventListener('submit', e => {
   e.preventDefault();
 
